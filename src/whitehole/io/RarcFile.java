@@ -29,7 +29,7 @@ public class RarcFile implements FilesystemBase {
     
     public RarcFile(FileBase _file) throws IOException {
         file = new Yaz0File(_file);
-        file.setBigEndian(true);
+        file.setBigEndian(false);
 
         file.position(0);
         int tag = file.readInt();
